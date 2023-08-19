@@ -1,7 +1,9 @@
 # deep-learning-challenge
 
 
-Overview
+**Overview**
+
+
 This project was designed to help create a predictive model to determine whether applicants for aid from the non-profit group Alphabet Soup will successfully use the funding they request.
 
 It uses a neural net deep learning model to make a binary prediction of funding success based on a sample size of approximately 34,000 previous aid grants.
@@ -14,10 +16,11 @@ As the initial model fell slightly below 75% accuracy, several further attempts 
 
 
 
-Results
+**Results**
 
 
-Preprocessing
+
+- Preprocessing
 
 
 The only target variable in the dataset is IS_SUCCESSFUL.
@@ -25,7 +28,7 @@ The features which contribute to the analysis include: APPLICATION_TYPE, AFFILIA
 EIN and NAME are both identifications for the specific businesses that received funding in the past. As such, they do not contribute directly to the success of the funding and therefor are neither targets nor features.
 
 
-Compiling, Training, and Evaluating the Model
+- Compiling, Training, and Evaluating the Model
 
 
 
@@ -41,7 +44,7 @@ None of these methods yielded positive results.
 
 
 
-Summary:
+**Summary:**
 
 
 On the whole, while the model never reached the target accuracy of 75%, it did come quite close at 73% for the best iteration.
