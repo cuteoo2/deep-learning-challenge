@@ -25,7 +25,7 @@ As the initial model fell slightly below 75% accuracy, 3 more attempts were made
 
 The only target variable in the dataset is IS_SUCCESSFUL.
 The features which contribute to the analysis include: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, and ASK_AMT.
-EIN and NAME are both identifications for the specific businesses that received funding in the past. As such, they do not contribute directly to the success of the funding and therefor are neither targets nor features.
+EIN and NAME are both identifications for the specific businesses that received funding in the past. As such, they do not contribute directly to the success of the funding and therefore are neither targets nor features.
 
 
 - Compiling, Training, and Evaluating the Model
