@@ -47,7 +47,7 @@ None of these methods yielded positive results.
 **Summary:**
 
 
-On the whole, while the model never reached the target accuracy of 75%, it did come quite close at 73% for the best iteration.
+While the model never reached the target accuracy of 75%, it did come quite close at 73% for the best iteration.
 One issue was the lack of any real impact from the attempted optimization methods for the model. It may have worked better to commit to using Tensorflow's Keras Tuner library to more rigorously examine the effects of varying the hyperparameters.
 It is also possible that some of the other feature variables may have been able to be dropped to improve model accuracy. Determining which variables are more valuable to preidicting funding success would take a more rigorous investigation than was possible on the scale of this project.
 As for whether some other type of model would be more appropriate for creating a binary classifier for investment success, I can't come up with one.
