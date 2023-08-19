@@ -1,7 +1,7 @@
 # deep-learning-challenge
 
 
-**Overview**
+**OVERVIEW**
 
 The nonprofit foundation Alphabet Soup wants a tool that can help it select the applicants for funding with the best chance of success in their ventures. This project was done to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
 
@@ -16,7 +16,7 @@ As the initial model fell slightly below 75% accuracy, 3 more attempts were made
 
 
 
-**Results**
+**RESULTS**
 
 
 Preprocessing
@@ -55,7 +55,7 @@ The model was unable to reach the target accuracy of 75% in any of my attempts. 
 
 
 
-**Summary:**
+*SUMMARY**
 
 
 While the model never reached the target accuracy of 75%, it did come quite close at 73% for the best iteration.
