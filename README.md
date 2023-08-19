@@ -19,28 +19,39 @@ As the initial model fell slightly below 75% accuracy, 3 more attempts were made
 **Results**
 
 
-
-- Preprocessing
-
-
-The only target variable in the dataset is IS_SUCCESSFUL.
-The features which contribute to the analysis include: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, and ASK_AMT.
-EIN and NAME are both identifications for the specific businesses that received funding in the past. As such, they do not contribute directly to the success of the funding and therefore are neither targets nor features.
+Preprocessing
 
 
-- Compiling, Training, and Evaluating the Model
+- The only target variable in the dataset is IS_SUCCESSFUL.
+
+
+- The features which contribute to the analysis include: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, and ASK_AMT.
+
+
+- EIN and NAME are both identifications for the specific businesses that received funding in the past. As such, they do not contribute directly to the success of the funding and therefore are neither targets nor features.
+
+
+Compiling, Training, and Evaluating the Model
 
 
 
 The model was built with 3 hidden layers because there was a relatively high number of input dimensions, namely 39-43 depending on which setup I was running, with a later modification to 4 layers having little impact on the model's accuracy.
-For the number of neurons, I went with the rule-of-thumb stating that the number should be less than twice the size of the input layer, with that leading to the number of 80 neurons for the first layer. For the second hidden layer, I went with 30 to be somewhat fewer than the number of inputs. For the output layer I chose 1 to match the number of target dimensions.
-I used ReLU as the method for both hidden layers and sigmoid for the output layer due to being faimiliar with them from previous experience.
+
+- For the number of neurons, I went with the rule-of-thumb stating that the number should be less than twice the size of the input layer, with that leading to the number of 80 neurons for the first layer. For the second hidden layer, I went with 30 to be somewhat fewer than the number of inputs. For the output layer I chose 1 to match the number of target dimensions.
+
+- I used ReLU as the method for both hidden layers and sigmoid for the output layer due to being faimiliar with them from previous experience.
 The model was unable to reach the target accuracy of 75% in any of my attempts. The peak value was ~73% with all other attempts being virtually identical.
-I attempted 3 different methods to increase the performance of my model.
-First, I tried adding another hidden layer between my two original hidden layers with 60 neurons.
-Second, I tried doubling the number of neurons in each hidden layer.
-Third, I tried dropping the STATUS and SPECIAL_CONSIDERATIONS variables from the data to see if they were confusing the analysis.
-None of these methods yielded positive results.
+
+
+- I attempted 3 different methods to increase the performance of my model.
+
+- First, I tried adding another hidden layer between my two original hidden layers with 60 neurons.
+
+- Second, I tried doubling the number of neurons in each hidden layer.
+
+- Third, I tried dropping the STATUS and SPECIAL_CONSIDERATIONS variables from the data to see if they were confusing the analysis.
+
+- None of these methods yielded positive results.
 
 
 
