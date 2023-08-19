@@ -55,8 +55,8 @@ The model was unable to reach the target accuracy of 75% in any of my attempts. 
 
 
 
-*SUMMARY**
-
+**SUMMARY
+**
 
 While the model never reached the target accuracy of 75%, it did come quite close at 73% for the best iteration.
 One issue was the lack of any real impact from the attempted optimization methods for the model. It may have worked better to commit to using Tensorflow's Keras Tuner library to more rigorously examine the effects of varying the hyperparameters.
